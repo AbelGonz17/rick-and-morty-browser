@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rick & Morty API</title>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <h1>Rick and Morty API</h1>
+
+    <!-- Controles -->
+    <div>
+      <input type="text" id="busqueda" placeholder="Buscar personaje..." />
+      <button id="btnBuscar">Buscar</button>
+    </div>
+
+    <label for="filtroEstado">Filtrar por estado:</label>
+    <select id="filtroEstado">
+      <option value="">Todos</option>
+      <option value="Alive">Vivo</option>
+      <option value="Dead">Muerto</option>
+      <option value="unknown">Desconocido</option>
+    </select>
+
+    <!-- Botones de paginación -->
+    <div>
+      <button id="prev" disabled>Anterior</button>
+      <button id="next" disabled>Siguiente</button>
+    </div>
+
+    <!-- Contenedor para personajes -->
+    <div id="personaje"></div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <!-- Importar script principal -->
+    <script type="module" src="JS/app.js"></script>
+  </body>
+</html>
